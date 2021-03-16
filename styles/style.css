@@ -1,10 +1,10 @@
 .grup-foto {
-  margin-bottom: -10px;
   opacity: 0.85;
   cursor: pointer;
-  width: 34.3%;
+  width: 30%;
   float:left;
-  transform: translate(50%, 0%);
+  display: block;
+  margin: 0 auto;
 }
 .grup-foto:hover {
   opacity: 1
@@ -18,7 +18,7 @@
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 12000px) {
   .column {
     width: 100%;
   }
@@ -26,27 +26,21 @@
 button {margin: 15px}
 
 p {
-  color: black;
-  width: 1250px;
-  border: 3px solid black;
-  padding: 20px;
-  margin bottom: 10px
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 1px;
- }
- p {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 1px;
   text-align: center;
-  transform: translate(25%, 0%);
-
+  color: black;
+  width: 1250px;
+  border: 3px solid black;
+  padding: 20px;
 }
  html {
   font-size: 12px; /* px means "pixels": the base font size is now 10 pixels high  */
   font-family: 'Oswald', sans-serif; /* this should be the rest of the output you got from Google fonts */
-  background-color: linear-gradient(rgb(255, 255, 255), rgb(128, 0, 0));
 }
 h1 {
   font-size: 40px;
