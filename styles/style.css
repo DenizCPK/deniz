@@ -1,47 +1,64 @@
-.grup-foto {
-  opacity: 0.85;
-  cursor: pointer;
-  width: 30%;
-  float:left;
-  display: block;
-  margin: 0 auto;
-}
-.grup-foto:hover {
-  opacity: 1
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 12000px) {
-  .column {
-    width: 100%;
-  }
-}
-button {margin: 15px}
-
-p {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 1px;
+body {
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(128, 0, 0));
+  display: grid;
+  place-items: center;
   text-align: center;
-  color: black;
-  width: 1250px;
-  border: 3px solid black;
-  padding: 20px;
+  margin: 0;
 }
- html {
+html {
   font-size: 12px; /* px means "pixels": the base font size is now 10 pixels high  */
   font-family: 'Oswald', sans-serif; /* this should be the rest of the output you got from Google fonts */
 }
+.prg-1 {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  max-width: 900px;
+  font-size: 18px;
+  border: 3px solid black;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+/* Create four equal columns that sits next to each other */
+.grup-foto {
+  -ms-flex: 45%; /* IE10 */
+  flex: 45%;
+  max-width: 45%;
+  padding: 0 4px;
+}
+
+.grup-foto img {
+  margin-top: 8px;
+  opacity: 0.85;
+  cursor: pointer;
+}
+.grup-foto img:hover {
+  opacity: 1
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .grup-foto {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+}
+
+button {
+  margin: 15px
+}
+
 h1 {
   font-size: 40px;
   text-align: center;
@@ -50,12 +67,5 @@ h1 {
   color: black;
   text-shadow: 3px 3px 1px white;
 
-}
-body {
-  background-image: linear-gradient(rgb(255, 255, 255), rgb(128, 0, 0));
-}
-img {
-  display: block;
-  margin: 0 auto;
-}
+
 
