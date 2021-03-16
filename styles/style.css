@@ -1,7 +1,25 @@
+.grup-foto {
+  margin-bottom: -10px;
+  opacity: 0.85;
+  cursor: pointer;
+  width: 50%;
+  float:left;
+}
+.grup-foto:hover {
+  opacity: 1
+}
+
+button {margin: 15px}
+
 p {
   color: black;
-  width: 1198px;
+  width: 1210px;
   border: 3px solid black;
+  padding: 20px;
+  margin bottom: 10px
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 1px;
  }
  p {
   font-size: 18px;
@@ -11,25 +29,20 @@ p {
  html {
   font-size: 12px; /* px means "pixels": the base font size is now 10 pixels high  */
   font-family: 'Oswald', sans-serif; /* this should be the rest of the output you got from Google fonts */
+  background-color: linear-gradient(rgb(255, 255, 255), rgb(128, 0, 0));
 }
-html {
-  background-color: white;
-}
-
 h1 {
   font-size: 40px;
   text-align: center;
-}
-h1 {
   margin: 0;
   padding: 20px 0;
   color: black;
   text-shadow: 3px 3px 1px white;
 }
 body {
-  width: 1200px;
+  width: 1250px;
   margin: 0 auto;
-  background-color: lightblue;
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(128, 0, 0));
   padding: 0 20px 20px 20px;
   border: 5px solid black;
 }

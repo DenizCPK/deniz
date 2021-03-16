@@ -1,19 +1,18 @@
-// Image switcher code
-
 let myImage = document.querySelector('img');
 let myButton = document.querySelector('button');
 let myHeading = document.querySelector('h1');
 
+// Change User Code
 function setUserName() {
   let myName = prompt('Please enter your name.');
   localStorage.setItem('name', myName);
-  myHeading.textContent = 'Naber Şapşik, ' + myName;
+  myHeading.textContent = 'Hoşgelmişke, ' + myName;
 }
 if(!localStorage.getItem('name')) {
   setUserName();
 } else {
   let storedName = localStorage.getItem('name');
-  myHeading.textContent = 'Naber Şapşik, ' + storedName;
+  myHeading.textContent = 'Hoşgelmişke, ' + storedName;
 }
 myButton.onclick = function() {
   setUserName();
@@ -24,8 +23,9 @@ function setUserName() {
     setUserName();
   } else {
     localStorage.setItem('name', myName);
-    myHeading.textContent = `Naber Şapşik, ${myName}`;
+    myHeading.textContent = `Hoşgelmişke, ${myName}`;
   }
+// Image switcher code
 }
 myImage.onclick = function() {
     let mySrc = myImage.getAttribute('src');
@@ -35,3 +35,4 @@ myImage.onclick = function() {
       myImage.setAttribute('src','images/panigalev2.jpg');
     }
 }
+//
