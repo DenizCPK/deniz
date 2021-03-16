@@ -1,3 +1,21 @@
+button {
+  margin: 8px
+}
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  color: black;
+  text-shadow: 3px 3px 1px rgba(224, 11, 11, 0.26);
+}
+h2 {
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  color: black;
+}
 body {
   background-image: linear-gradient(rgb(255, 255, 255), rgb(128, 0, 0));
   display: grid;
@@ -52,12 +70,6 @@ html {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
-}
-
-button {
-  margin: 50px
-}
-
 h1 {
   font-size: 40px;
   text-align: center;
