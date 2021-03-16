@@ -1,6 +1,7 @@
 button {
   margin: 8px
 }
+
 h1 {
   font-size: 40px;
   text-align: center;
@@ -9,6 +10,7 @@ h1 {
   color: black;
   text-shadow: 3px 3px 1px rgba(224, 11, 11, 0.26);
 }
+
 h2 {
   font-size: 40px;
   text-align: center;
@@ -16,6 +18,7 @@ h2 {
   padding: 20px 0;
   color: black;
 }
+
 body {
   background-image: linear-gradient(rgb(255, 255, 255), rgb(128, 0, 0));
   display: grid;
@@ -27,6 +30,7 @@ html {
   font-size: 12px; /* px means "pixels": the base font size is now 10 pixels high  */
   font-family: 'Oswald', sans-serif; /* this should be the rest of the output you got from Google fonts */
 }
+
 .prg-1 {
   display: grid;
   place-items: center;
@@ -34,9 +38,10 @@ html {
   max-width: 900px;
   font-size: 18px;
   border: 3px solid black;
-  margin: 10px;
+  margin: 4px 10px;
   letter-spacing: 1px;
 }
+
 .row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
@@ -48,18 +53,20 @@ html {
   flex-wrap: wrap;
   margin: 0 10px;
 }
+
 /* Create four equal columns that sits next to each other */
 .grup-foto {
   -ms-flex: 45%; /* IE10 */
   flex: 45%;
   max-width: 45%;
-  padding: 0 4px;
+  padding: 0 2px;
 }
 
 .grup-foto img {
   opacity: 0.85;
   cursor: pointer;
 }
+
 .grup-foto img:hover {
   opacity: 1
 }
@@ -70,13 +77,4 @@ html {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
-h1 {
-  font-size: 40px;
-  text-align: center;
-  margin: 0;
-  padding: 20px 0;
-  color: black;
-  text-shadow: 3px 3px 1px white;
-
-
-
+}
